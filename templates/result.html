@@ -1,0 +1,21 @@
+<!-- templates/result.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Corrected Text Result</title>
+  </head>
+  <body>
+    <h1>Corrected Text</h1>
+    <p>{{ corrected_text }}</p>
+    
+    <h2>Messages</h2>
+    <ul>
+      {% for message in messages %}
+        <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+    
+    <a href="/">Submit another text</a>
+  </body>
+</html>
